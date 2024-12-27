@@ -74,13 +74,19 @@ script {
 body {
   max-width: 100%;
   overflow-x: hidden;
-  background-color: #FFCB44;
-  font: normal 14px 'Montserrat Alternates', Verdana, Helvetica, sans-serif;
-  color: #777;
+  font: normal 14px 'Poppins', 'Montserrat Alternates';
+
+  background-color: #FAF9F7;
+  font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+  color: #333; /* a softer dark gray */
+  margin: 0;
+  padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #444;
+  color: #2C3A3A;
+  font-weight: 600;  /* a bit thicker for that modern look */
+  margin: 0 0 10px;
 }
 
 a {
@@ -216,6 +222,11 @@ label, label + * {
 
 .buttons {
   margin: 0 0 30px;
+  background-color: #3C7E61;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 6px;
 }
 
 .link-rss {
@@ -481,7 +492,7 @@ label, label + * {
 .data-table a,
 .forum-table a {
   font-weight: normal;
-  color: green;
+  color: #044F48;
 }
 
 .cart a:hover,
@@ -520,7 +531,7 @@ label, label + * {
 .data-table .product a:focus,
 .data-table .info a:hover,
 .data-table .info a:focus {
-  color: green;
+  color: #044F48;
   text-decoration: none;
 }
 
@@ -530,7 +541,7 @@ label, label + * {
 
 .cart .product .edit-item a {
   font-weight: normal;
-  color: green;
+  color: #044F48;
 }
 
 .cart .product .edit-item a:hover,
@@ -590,7 +601,7 @@ label, label + * {
 
 .cart td.subtotal .discount, .cart td.subtotal .discount-additional-info {
   font-style: italic;
-  color: green;
+  color: #044F48;
 }
 
 .data-table em a {
@@ -805,7 +816,7 @@ label, label + * {
 
 .ui-dialog-content .back-in-stock-subscription-page .button-1 {
   border: none;
-  background-color: green;
+  background-color: #044F48;
   padding: 10px 15px;
   font-size: 15px;
   color: #fff;
@@ -815,7 +826,7 @@ label, label + * {
 
 .ui-dialog-content .back-in-stock-subscription-page .button-1:hover,
 .ui-dialog-content .back-in-stock-subscription-page .button-1:focus {
-  background-color: green;
+  background-color: #044F48;
 }
 
 .eu-cookie-bar-notification {
@@ -842,7 +853,7 @@ label, label + * {
   min-width: 60px;
   margin: 5px 0 10px;
   border: none;
-  background-color: green;
+  background-color: #044F48;
   padding: 8px 12px;
   font-size: 14px;
   color: #fff;
@@ -855,7 +866,7 @@ label, label + * {
 
 .eu-cookie-bar-notification a {
   display: block;
-  color: green;
+  color: #044F48;
 }
 
 .eu-cookie-bar-notification a:hover,
@@ -981,7 +992,7 @@ label, label + * {
 
 .header-links a:hover,
 .header-links a:focus {
-  color: green;
+  color: #044F48;
 }
 
 #topcartlink {
@@ -1032,6 +1043,7 @@ label, label + * {
 .search-box input.search-box-text {
   width: 200px;
   height: 36px;
+  border-radius: 6px;
   margin: 0 -1px 0 0;
 }
 
@@ -1043,16 +1055,17 @@ label, label + * {
   min-width: 86px;
   height: 36px;
   border: none;
-  background-color: green;
+  background-color: #044F48;
   padding: 0 15px;
   text-align: center;
   color: #fff;
+  border-radius: 6px;
   text-transform: uppercase;
 }
 
 .search-box .search-box-button:hover,
 .search-box .search-box-button:focus {
-  background-color: green;
+  background-color: #044F48;
 }
 
 .search-box .ui-autocomplete-loading {
@@ -1139,7 +1152,7 @@ label, label + * {
 
 .footer-block .title {
   margin: 0 0 1px;
-  background: green url('../images/toggle-white.png') right center no-repeat;
+  background: #044F48 url('../images/toggle-white.png') right center no-repeat;
   padding: 10px 15px;
   font-size: 20px;
   color: #fff;
@@ -1165,7 +1178,7 @@ label, label + * {
 
 .footer-block .list a:hover,
 .footer-block .list a:focus {
-  color: green;
+  color: #044F48;
 }
 
 .follow-us {
@@ -1240,7 +1253,7 @@ label, label + * {
   float: left;
   height: 36px;
   border: none;
-  background-color: green;
+  background-color: #044F48;
   padding: 0 15px;
   text-align: center;
   color: #fff;
@@ -1277,7 +1290,7 @@ label, label + * {
 
 .footer-tax-shipping a {
   font-weight: bold;
-  color: green;
+  color: #044F48;
 }
 
 .footer-tax-shipping a:hover,
@@ -1292,7 +1305,7 @@ label, label + * {
 
 .footer-powered-by a {
   font-weight: bold;
-  color: green;
+  color: #044F48;
 }
 
 .footer-powered-by a:hover,
@@ -1366,12 +1379,12 @@ label, label + * {
 }
 
 .block .list .active > a {
-  color: green;
+  color: #044F48;
 }
 
 .block .list a:hover,
 .block .list a:focus {
-  color: green;
+  color: #044F48;
 }
 
 .block a.product-picture {
@@ -1402,7 +1415,7 @@ label, label + * {
   display: inline-block;
   padding: 10px 15px;
   font-size: 16px;
-  color: green;
+  color: #044F48;
 }
 
 .block .view-all a:hover,
@@ -1438,7 +1451,7 @@ label, label + * {
 .block .tags li a:focus,
 .product-tags-all-page li a:hover,
 .product-tags-all-page li a:focus {
-  color: green;
+  color: #044F48;
 }
 
 .poll strong {
@@ -1556,7 +1569,7 @@ label, label + * {
 
 .breadcrumb a:hover,
 .breadcrumb a:focus {
-  color: green;
+  color: #044F48;
 }
 
 .category-description,
@@ -1572,7 +1585,7 @@ label, label + * {
 
 .contact-vendor .button-2 {
   border: none;
-  background-color: green;
+  background-color: #044F48;
   padding: 10px 15px;
   font-size: 14px;
   color: #fff;
@@ -1581,7 +1594,7 @@ label, label + * {
 
 .contact-vendor .button-2:hover,
 .contact-vendor .button-2:focus {
-  background-color: green;
+  background-color: #044F48;
 }
 
 .product-selectors {
@@ -1706,11 +1719,15 @@ label, label + * {
 }
 
 .item-box {
-  position: relative;
-  width: 100%;
-  float: left;
-  margin: 0 0 80px;
+  width: 220px;
+  background-color: #FFF;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   text-align: left;
+  margin: 20px;
+  padding: 15px;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .item-box .picture {
@@ -1761,7 +1778,7 @@ label, label + * {
   font-size: 17px;
   line-height: 1.2;
   font-weight: normal;
-  color: green;
+  text-align: left;
 }
 
 .item-box .product-title a {
@@ -1786,6 +1803,8 @@ label, label + * {
   background: url('../images/rating1.png') repeat-x;
   width: 95px;
   height: 14px;
+  align-content: start;
+  align-items: start;
 }
 
 .item-box .rating div {
@@ -1832,7 +1851,7 @@ label, label + * {
 }
 
 .item-box .tax-shipping-info a {
-  color: green;
+  color: #044F48;
 }
 
 .item-box .tax-shipping-info a:hover,
@@ -1854,7 +1873,7 @@ label, label + * {
 
 .item-box .product-box-add-to-cart-button {
   width: 60%;
-  background-color: green;
+  background-color: #DEF9EC;
   text-align: center;
   font-size: 15px;
   color: #fff;
@@ -1962,7 +1981,7 @@ label, label + * {
 
 .manufacturer-grid .title a:hover,
 .manufacturer-grid .title a:focus {
-  color: green;
+  color: #044F48;
 }
 
 .manufacturer-grid .picture {
@@ -1977,7 +1996,7 @@ label, label + * {
 
 .vendor-grid .title a:hover,
 .vendor-grid .title a:focus {
-  color: green;
+  color: #044F48;
 }
 
 .vendor-grid .picture {
@@ -2014,7 +2033,7 @@ label, label + * {
 
 .pager li span {
   border-color: transparent;
-  background-color: green;
+  background-color: #044F48;
   color: #fff;
 }
 
@@ -2207,7 +2226,7 @@ label, label + * {
 .review-item-info .review-product-name a,
 .vendor-page .block a {
   display: inline-block;
-  color: green;
+  color: #044F48;
   cursor: pointer;
 }
 
@@ -2237,7 +2256,7 @@ label, label + * {
 
 .product-review-links a:hover,
 .product-review-links a:focus {
-  color: green;
+  color: #044F48;
 }
 
 .overview .value,
@@ -2247,7 +2266,7 @@ label, label + * {
 
 .overview .value a,
 .variant-overview .value a {
-  color: green;
+  color: #044F48;
 }
 
 .overview .value a:hover,
@@ -2413,7 +2432,7 @@ label, label + * {
 
 .overview .tax-shipping-info a,
 .variant-overview .tax-shipping-info a {
-  color: green;
+  color: #044F48;
 }
 
 .overview .tax-shipping-info a:hover,
@@ -2511,7 +2530,7 @@ label, label + * {
 .variant-overview .add-to-cart-button {
   height: 43px;
   border: none;
-  background-color: green;
+  background-color: #044F48;
   padding: 0 24px;
   font-size: 15px;
   color: #fff;
@@ -2578,7 +2597,7 @@ label, label + * {
   padding: 10px 0;
   font-size: 16px;
   font-weight: bold;
-  color: green;
+  color: #044F48;
 }
 
 .variant-overview .variant-description {
@@ -2751,7 +2770,7 @@ label, label + * {
 .ui-datepicker-header {
   position: relative;
   height: 32px;
-  background-color: green;
+  background-color: #044F48;
   color: #fff;
   /*override jQuery UI styles, do not delete doubled properties*/
   border: none;
@@ -2837,11 +2856,11 @@ label, label + * {
 }
 
 .ui-datepicker-calendar .ui-state-active {
-  outline: 2px solid green;
+  outline: 2px solid #044F48;
   font-weight: bold;
-  color: green;
+  color: #044F48;
   /*override jQuery UI styles, do not delete doubled properties*/
-  color: green !important;
+  color: #044F48 !important;
 }
 
 .attribute-squares {
@@ -2877,7 +2896,7 @@ label, label + * {
 }
 
 .attribute-squares .selected-value .attribute-square-container {
-  background-color: green;
+  background-color: #044F48;
 }
 
 .attribute-squares li input {
@@ -2987,7 +3006,7 @@ label, label + * {
 
 
 .product-reviews h1 a {
-  color: green;
+  color: #044F48;
 }
 
 .product-reviews h1 a:before,
@@ -3081,7 +3100,7 @@ label, label + * {
 
 .write-review .button-1 {
   border: none;
-  background-color: green;
+  background-color: #044F48;
   padding: 10px 25px;
   text-align: center;
   font-size: 15px;
@@ -3164,7 +3183,7 @@ label, label + * {
 .product-review-helpfulness .vote {
   display: inline-block;
   padding: 0 5px;
-  color: green;
+  color: #044F48;
   cursor: pointer;
 }
 
@@ -3240,7 +3259,7 @@ label, label + * {
 
 .wishlist-content .update-wishlist-button,
 .wishlist-content .wishlist-add-to-cart-button {
-  background-color: green;
+  background-color: #044F48;
   text-transform: uppercase;
 }
 
@@ -3276,7 +3295,7 @@ label, label + * {
 
 .wishlist-page .share-info a:hover,
 .wishlist-page .share-info a:focus {
-  color: green;
+  color: #044F48;
 }
 
 .wishlist-page .no-data {
@@ -3291,7 +3310,7 @@ label, label + * {
 .compare-products-page .clear-list {
   display: inline-block;
   margin: 0 0 20px;
-  background-color: green;
+  background-color: #044F48;
   padding: 10px 15px;
   font-size: 12px;
   color: #fff;
@@ -3348,7 +3367,7 @@ label, label + * {
 
 .compare-products-table .remove-button:hover,
 .compare-products-table .remove-button:focus {
-  color: green;
+  color: #044F48;
 }
 
 .compare-products-table .picture {
@@ -3376,7 +3395,7 @@ label, label + * {
 
 .compare-products-table .product-name td a:hover,
 .compare-products-table .product-name td a:focus {
-  color: green;
+  color: #044F48;
 }
 
 .compare-products-table .short-description td {
@@ -3472,7 +3491,7 @@ label, label + * {
   min-width: 86px;
   height: 40px;
   border: none;
-  background-color: green;
+  background-color: #044F48;
   padding: 0 15px;
   color: #fff;
   text-transform: uppercase;
@@ -3508,7 +3527,7 @@ label, label + * {
 .apply-vendor-page .button-1 {
   min-width: 140px;
   border: none;
-  background-color: green;
+  background-color: #044F48;
   padding: 10px 30px;
   text-align: center;
   font-size: 15px;
@@ -3533,7 +3552,7 @@ label, label + * {
 
 .email-a-friend-page .title h2 {
   font-weight: normal;
-  color: green;
+  color: #044F48;
 }
 
 .apply-vendor-page .terms-of-service {
@@ -3547,7 +3566,7 @@ label, label + * {
 
 .apply-vendor-page .terms-of-service span,
 .apply-vendor-page .terms-of-service a {
-  color: green;
+  color: #044F48;
   cursor: pointer;
 }
 
@@ -3613,7 +3632,7 @@ label, label + * {
 
 .inputs.accept-consent span,
 .inputs.accept-consent a {
-  color: green;
+  color: #044F48;
   cursor: pointer;
   font-size: 14px;
 }
@@ -3634,7 +3653,7 @@ label, label + * {
 .return-request-page .button-1 {
   min-width: 140px;
   border: none;
-  background-color: green;
+  background-color: #044F48;
   padding: 10px 30px;
   text-align: center;
   font-size: 15px;
@@ -3662,7 +3681,7 @@ label, label + * {
 }
 
 .return-request-page h1 a {
-  color: green;
+  color: #044F48;
 }
 
 .return-request-page .return-request-file {
@@ -3766,7 +3785,7 @@ label, label + * {
 
 .login-page .returning-wrapper .inputs.reversed a:hover,
 .login-page .returning-wrapper .inputs.reversed a:focus {
-  color: green;
+  color: #044F48;
 }
 
 .login-page .captcha-box {
@@ -3832,7 +3851,7 @@ label, label + * {
 }
 
 .external-auth-association a {
-  color: green;
+  color: #044F48;
 }
 
 .external-auth-association a:hover,
@@ -3855,7 +3874,7 @@ label, label + * {
 }
 
 .add-more-external-records a {
-  color: green;
+  color: #044F48;
 }
 
 .add-more-external-records a:hover,
@@ -3937,7 +3956,7 @@ label, label + * {
 .address-list-page .button-2:focus,
 .order-list-page .button-2:hover,
 .order-list-page .button-2:focus {
-  color: green;
+  color: #044F48;
 }
 
 .address-list-page .add-button {
@@ -3986,7 +4005,7 @@ label, label + * {
 }
 
 .return-request-list-page a {
-  color: green;
+  color: #044F48;
 }
 
 .return-request-list-page a:hover,
@@ -4226,7 +4245,7 @@ label, label + * {
 }
 
 .shopping-cart-page .common-buttons button:first-child {
-  background-color: green;
+  background-color: #044F48;
 }
 
 .shopping-cart-page .common-buttons button:first-child:hover,
@@ -4331,7 +4350,7 @@ label, label + * {
 
 .cart-total .order-total {
   font-size: 20px;
-  color: green;
+  color: #044F48;
 }
 
 .cart-total .order-total strong {
@@ -4359,7 +4378,7 @@ label, label + * {
 
 .terms-of-service a {
   margin: 0 0 0 3px;
-  color: green;
+  color: #044F48;
 }
 
 .cart-footer .checkout-buttons {
@@ -4379,7 +4398,7 @@ label, label + * {
   display: inline-block;
   min-width: 160px;
   border: none;
-  background-color: green;
+  background-color: #044F48;
   padding: 10px 20px;
   font-size: 16px;
   color: #fff;
@@ -4642,16 +4661,16 @@ label, label + * {
 }
 
 .estimate-shipping-radio:checked + label {
-  background-color: green;
+  background-color: #044F48;
   color: #99a1a7;
   border: 1px solid #adb8c0;
-  border-color: green;
+  border-color: #044F48;
 }
 
 .apply-shipping-button {
   border: none;
   padding: 8px 25px;
-  background-color: green;
+  background-color: #044F48;
   color: #fff;
 }
 
@@ -4809,7 +4828,7 @@ label, label + * {
   display: inline-block;
   min-width: 140px;
   border: none;
-  background-color: green;
+  background-color: #044F48;
   padding: 10px 30px;
   text-align: center;
   font-size: 15px;
@@ -5065,7 +5084,7 @@ label, label + * {
 }
 
 .order-completed .details a {
-  color: green;
+  color: #044F48;
 }
 
 .order-completed .details a:hover,
@@ -5080,7 +5099,7 @@ label, label + * {
 }
 
 .opc .allow .step-title {
-  background-color: green;
+  background-color: #044F48;
   cursor: pointer;
 }
 
@@ -5152,7 +5171,7 @@ label, label + * {
 
 .opc .back-link a:hover,
 .opc .back-link a:focus {
-  color: green;
+  color: #044F48;
 }
 
 .opc .buttons .please-wait {
@@ -5220,7 +5239,7 @@ label, label + * {
 }
 
 .order-details-page .page-title a.print-order-button {
-  background-color: green;
+  background-color: #044F48;
 }
 
 .order-details-page .page-title a.print-order-button:hover,
@@ -5243,14 +5262,14 @@ label, label + * {
 
 .order-details-page .order-overview .order-total strong {
   font-weight: normal;
-  color: green;
+  color: #044F48;
 }
 
 .order-details-page .repost .button-2 {
   display: inline-block;
   margin: 10px 0;
   border: none;
-  background-color: green;
+  background-color: #044F48;
   padding: 10px 15px;
   font-size: 12px;
   color: #fff;
@@ -5264,7 +5283,7 @@ label, label + * {
 
 .order-details-page .download a {
   font-weight: normal;
-  color: green;
+  color: #044F48;
 }
 
 .order-details-page .download a:hover,
@@ -5281,7 +5300,7 @@ label, label + * {
 .user-agreement-page .button-1 {
   min-width: 140px;
   border: none;
-  background-color: green;
+  background-color: #044F48;
   padding: 10px 30px;
   text-align: center;
   font-size: 15px;
@@ -5299,7 +5318,7 @@ label, label + * {
 }
 
 .order-details-page .tax-shipping-info a {
-  color: green;
+  color: #044F48;
 }
 
 .order-details-page .tax-shipping-info a:hover,
@@ -5330,7 +5349,7 @@ label, label + * {
 }
 
 .order-details-page .actions button:first-child {
-  background-color: green;
+  background-color: #044F48;
 }
 
 .order-details-page .actions button:first-child:hover,
@@ -5393,7 +5412,7 @@ label, label + * {
 .search-input .button-1 {
   min-width: 140px;
   border: none;
-  background-color: green;
+  background-color: #044F48;
   padding: 10px 30px;
   text-align: center;
   font-size: 15px;
@@ -5472,7 +5491,7 @@ label, label + * {
 
 .sitemap-page .entity a:hover,
 .sitemap-page .entity a:focus {
-  color: green;
+  color: #044F48;
 }
 
 .sitemap-page .entity a:empty {
@@ -5528,7 +5547,7 @@ label, label + * {
 .post-title:focus,
 .news-title:hover,
 .news-title:focus {
-  color: green;
+  color: #044F48;
 }
 
 .post-date,
@@ -5584,7 +5603,7 @@ label, label + * {
 .blog-page .tags a,
 .blogpost-page .tags a {
   display: block;
-  color: green;
+  color: #044F48;
 }
 
 .blog-page .tags a:hover,
@@ -5609,14 +5628,14 @@ label, label + * {
 
 .blog-posts .buttons .read-comments:hover,
 .blog-posts .buttons .read-comments:focus {
-  color: green;
+  color: #044F48;
 }
 
 .blog-posts .buttons .read-more,
 .news-items .buttons .read-more {
   display: inline-block;
   border: none;
-  background-color: green;
+  background-color: #044F48;
   padding: 10px 20px;
   font-size: 12px;
   color: #fff;
@@ -5648,7 +5667,7 @@ label, label + * {
 
 .new-comment .button-1 {
   border: none;
-  background-color: green;
+  background-color: #044F48;
   padding: 10px 30px;
   text-align: center;
   font-size: 15px;
@@ -5704,7 +5723,7 @@ label, label + * {
 
 .comment-info a.username:hover,
 .comment-info a.username:focus {
-  color: green;
+  color: #044F48;
 }
 
 .comment-info .avatar {
@@ -5775,7 +5794,7 @@ label, label + * {
 
 .news-list-homepage .view-all a:hover,
 .news-list-homepage .view-all a:focus {
-  color: green;
+  color: #044F48;
 }
 
 
@@ -5829,7 +5848,7 @@ label, label + * {
 
 .forum-search-box .advanced a:hover,
 .forum-search-box .advanced a:focus {
-  color: green;
+  color: #044F48;
 }
 
 .forum-search-page .page-title {
@@ -5867,7 +5886,7 @@ label, label + * {
 
 .forums-table-section-title a:hover,
 .forums-table-section-title a:focus {
-  color: green;
+  color: #044F48;
 }
 
 .forums-table-section .image div {
@@ -5901,7 +5920,7 @@ label, label + * {
 .forums-table-section .forum-title a:focus,
 .forums-table-section .topic-title a:hover,
 .forums-table-section .topic-title a:focus {
-  color: green;
+  color: #044F48;
   text-decoration: none;
 }
 
@@ -5933,7 +5952,7 @@ label, label + * {
 }
 
 .forums-table-section .view-all a {
-  background-color: green;
+  background-color: #044F48;
   padding: 10px 15px;
   font-size: 12px;
   color: #fff;
@@ -6077,7 +6096,7 @@ label, label + * {
 
 .topic-post a.username:hover,
 .topic-post a.username:focus {
-  color: green;
+  color: #044F48;
 }
 
 .topic-post .avatar,
@@ -6183,13 +6202,13 @@ label, label + * {
 .topic-post .post-actions .edit-post-button:focus,
 .topic-post .post-actions .delete-post-button:hover,
 .topic-post .post-actions .delete-post-button:focus {
-  color: green;
+  color: #044F48;
 }
 
 .topic-post .post-actions .post-link-button {
   padding: 10px;
   font-weight: bold;
-  color: green;
+  color: #044F48;
 }
 
 .topic-post .post-actions .post-link-button:hover,
@@ -6367,7 +6386,7 @@ label, label + * {
 .forum-edit-page .buttons .button-1,
 .move-topic-page .buttons .button-1,
 .private-messages .buttons .button-1 {
-  background-color: green;
+  background-color: #044F48;
 }
 
 .forum-edit-page .buttons .button-1:hover,
@@ -6381,7 +6400,7 @@ label, label + * {
 
 .private-message-send-page a {
   font-size: 14px;
-  color: green;
+  color: #044F48;
 }
 
 .private-message-send-page span {
@@ -6445,7 +6464,7 @@ label, label + * {
 
 .ui-tabs-nav li.ui-state-active a {
   background-color: #eee;
-  color: green;
+  color: #044F48;
 }
 
 .ui-tabs-panel {
@@ -6479,7 +6498,7 @@ label, label + * {
 }
 
 .private-messages-page td.subject a.pm-unread {
-  color: green;
+  color: #044F48;
 }
 
 .private-messages-page .pager {
@@ -6588,7 +6607,7 @@ label, label + * {
 
 .latest-posts .topic-title a:hover,
 .latest-posts .topic-title a:focus {
-  color: green;
+  color: #044F48;
 }
 
 .latest-posts .topic-body {
@@ -6615,7 +6634,7 @@ label, label + * {
 }
 
 .csharpcode .rem {
-  color: green;
+  color: #044F48;
 }
 
 .csharpcode .kwrd {
@@ -6809,7 +6828,7 @@ label, label + * {
   }
 
   .menu-toggle {
-    background: green url('../images/menu-icon.png') right center no-repeat;
+    background: #044F48 url('../images/menu-icon.png') right center no-repeat;
     padding: 15px;
     font-size: 15px;
     font-weight: bold;
@@ -7520,7 +7539,7 @@ label, label + * {
   }
 
   .shipment-details-page .tracking-number .tracking-url {
-    color: green;
+    color: #044F48;
   }
 
 
@@ -8028,7 +8047,7 @@ label, label + * {
   }
 
   .mini-shopping-cart .name a {
-    color: green;
+    color: #044F48;
   }
 
   .mini-shopping-cart .name a:hover,
@@ -8058,7 +8077,7 @@ label, label + * {
   .mini-shopping-cart button[type="button"] {
     display: inline-block;
     border: none;
-    background-color: green;
+    background-color: #044F48;
     padding: 10px 20px;
     font-size: 12px;
     color: #fff;
@@ -8143,7 +8162,7 @@ label, label + * {
 
   .header-menu > ul > li > a:hover,
   .header-menu > ul > li > a:focus {
-    color: green;
+    color: #044F48;
   }
 
   .header-menu .sublist {
@@ -8931,7 +8950,7 @@ label, label + * {
 
 .swiper-pagination-bullet-active {
   padding: 5px;
-  background-color: green;
+  background-color: #044F48;
 }
 
 a.skip {
