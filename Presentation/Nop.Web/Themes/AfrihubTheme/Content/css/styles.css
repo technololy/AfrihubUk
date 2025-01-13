@@ -1862,6 +1862,8 @@ label, label + * {
 .item-box .buttons {
   margin: 0;
   font-size: 0;
+  background-color: #DEF9EC;
+  color: #000000;
 }
 
 .item-box button {
