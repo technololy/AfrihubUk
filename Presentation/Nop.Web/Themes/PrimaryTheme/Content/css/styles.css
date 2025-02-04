@@ -145,7 +145,7 @@ textarea, select {
 
 input, textarea, select, button {
   font-size: 14px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--primary-font);
   color: #777;
 }
 
@@ -169,6 +169,7 @@ select:focus {
   color: #444;
   position: relative;
   z-index: 1;
+  outline: none;
 }
 
 input[type="checkbox"],
@@ -1035,11 +1036,11 @@ label, label + * {
 .header-lower {
   position: relative;
   z-index: 0;
-  padding: 35px 0;
+  padding: 2rem 0;
 }
 
 .header-logo {
-  margin: 0 0 20px;
+  margin: 0 0 1.25rem;
   text-align: center;
 }
 
@@ -1059,14 +1060,20 @@ label, label + * {
 .search-box form {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-between;
   gap: 10px 0;
+  padding: 6px 10px;
+  background-color: var(--white-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 4.5rem;
 }
 
 .search-box input.search-box-text {
   width: 200px;
   height: 36px;
   margin: 0 -1px 0 0;
+  background-color: transparent;
+  border: none;
 }
 
 .search-box .search-box-category {
@@ -1074,23 +1081,26 @@ label, label + * {
 }
 
 .search-box .search-box-button {
-  min-width: 86px;
-  height: 36px;
+  min-width: 6.25rem;
+  height: 2.25rem;
   border: none;
-  background-color: #4ab2f1;
-  padding: 0 15px;
+  background-color: var(--primary-color);
+  padding: 0 1rem;
   text-align: center;
-  color: #fff;
-  text-transform: uppercase;
+  color: var(--white-color);
+  font-family: var(--primary-font);
+  text-transform: capitalize;
+  border-radius: 2.25rem;
+  box-shadow: 0px 1px 2px 0px hsla(0, 0%, 0%, 0.3);
 }
 
 .search-box .search-box-button:hover,
 .search-box .search-box-button:focus {
-  background-color: #248ece;
+  opacity: 0.9;
 }
 
 .search-box .ui-autocomplete-loading {
-  background: #fff url('../images/ajax-loader-small.gif') right center no-repeat;
+  background: var(--white-color) url('../images/ajax-loader-small.gif') right center no-repeat;
 }
 
 .ui-helper-hidden-accessible {
@@ -1151,16 +1161,16 @@ label, label + * {
 
 
 .footer {
-  background-color: #eee;
+  background-color: var(--secondary-color);
+  color: var(--black-color);
   text-align: center;
 }
 
 .footer-upper {
   width: 95%;
   margin: auto;
-  border-bottom: 1px solid #ddd;
   overflow: hidden;
-  padding: 40px 0;
+  padding: 2.5rem 0;
   font-size: 0;
 }
 
@@ -1173,21 +1183,22 @@ label, label + * {
 
 .footer-block .title {
   margin: 0 0 1px;
-  background: #4ab2f1 url('../images/toggle-white.png') right center no-repeat;
+  background: var(--primary-color) url('../images/toggle-white.png') right center no-repeat;
   padding: 10px 15px;
   font-size: 20px;
-  color: #fff;
+  color: var(--white-color);
   cursor: pointer;
 }
 
 .footer-block .title strong {
-  font-weight: normal;
+  color: hsla(0, 0%, 0%, 0.5);
+  font-weight: 600;
 }
 
 .footer-block .list {
   display: none;
   margin: 0 0 20px;
-  background-color: #fff;
+  background-color: var(--secondary-color);
   padding: 10px 15px;
 }
 
@@ -1199,7 +1210,7 @@ label, label + * {
 
 .footer-block .list a:hover,
 .footer-block .list a:focus {
-  color: #4ab2f1;
+  color: var(--primary-color);
 }
 
 .follow-us {
@@ -1216,7 +1227,6 @@ label, label + * {
 
 .follow-us .social ul {
   margin: 0 0 30px;
-  border-bottom: 1px solid #ddd;
   padding: 0 0 30px;
   font-size: 0;
 }
@@ -1255,8 +1265,14 @@ label, label + * {
 }
 
 .newsletter-email {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   overflow: hidden;
+  background-color: var(--white-color);
+  padding: 4px 8px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4.5rem;
 }
 
 .newsletter-email:focus-within {
@@ -1268,22 +1284,26 @@ label, label + * {
   width: 180px;
   height: 36px;
   margin: 0 -1px 0 0;
+  background-color: transparent;
+  border: none;
 }
 
 .newsletter-subscribe-button {
   float: left;
-  height: 36px;
+  height: 2.25rem;
   border: none;
-  background-color: #4ab2f1;
-  padding: 0 15px;
+  border-radius: 2.25rem;
+  background-color: var(--primary-color);
+  padding: 0 1rem;
   text-align: center;
-  color: #fff;
-  text-transform: uppercase;
+  color: var(--white-color);
+  text-transform: capitalize;
+  box-shadow: 0px 1px 2px 0px hsla(0, 0%, 0%, 0.3);
 }
 
 .newsletter-subscribe-button:hover,
 .newsletter-subscribe-button:focus {
-  background-color: #248ece;
+  opacity: 0.9;
 }
 
 .newsletter-email .options {
@@ -1326,7 +1346,7 @@ label, label + * {
 
 .footer-powered-by a {
   font-weight: bold;
-  color: #4ab2f1;
+  color: var(--primary-color);
 }
 
 .footer-powered-by a:hover,
@@ -8139,7 +8159,9 @@ label, label + * {
   }
 
   .header-lower {
-    display: table;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
   }
 
@@ -8148,16 +8170,13 @@ label, label + * {
     text-align: left;
     vertical-align: middle;
     font-size: 0;
-  }
-
-  .search-box form{
-    justify-content: flex-end;
+    margin: 0;
   }
 
   .search-box input.search-box-text,
   .search-box .search-box-button,
   .search-box .search-box-category {
-    height: 40px;
+    height: 2.5rem;
   }
 
 
@@ -8299,10 +8318,6 @@ label, label + * {
 
   .follow-us .social li {
     margin: 0 10px 0 0;
-  }
-
-  .newsletter-email {
-    display: block;
   }
 
   .newsletter-email input[type="text"] {
