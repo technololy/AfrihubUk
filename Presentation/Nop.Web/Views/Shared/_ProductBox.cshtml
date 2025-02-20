@@ -60,6 +60,11 @@
         }
     </div>
     <div class="details">
+        <span class="product-category">
+            @* <a href="@(Url.RouteUrl<Product>(new {SeName = Model.SeName }))"> *@
+            @Model.Name
+            @* </a> *@
+        </span>
         <h2 class="product-title">
             <a href="@(Url.RouteUrl<Product>(new {SeName = Model.SeName }))">@Model.Name</a>
         </h2>

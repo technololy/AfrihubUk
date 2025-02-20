@@ -7058,6 +7058,7 @@ label, label + * {
 
   .footer-block {
     width: 85%;
+    font-weight: 500;
   }
 
   .newsletter-email input[type="text"] {
