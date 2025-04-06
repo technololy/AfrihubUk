@@ -94,11 +94,11 @@
         <div class="add-info">
             @await Component.InvokeAsync(typeof(WidgetViewComponent), new { widgetZone = PublicWidgetZones.ProductBoxAddinfoBefore, additionalData = Model })
             <div class="prices">
+                <span class="price actual-price">@Model.ProductPrice.Price</span>
                 @if (!string.IsNullOrEmpty(Model.ProductPrice.OldPrice))
                 {
                     <span class="price old-price">@Model.ProductPrice.OldPrice</span>
                 }
-                <span class="price actual-price">@Model.ProductPrice.Price</span>
                 @if (Model.ProductPrice.DisplayTaxShippingInfo)
                 {
                     var inclTax = await workContext.GetTaxDisplayTypeAsync() == TaxDisplayType.IncludingTax;
