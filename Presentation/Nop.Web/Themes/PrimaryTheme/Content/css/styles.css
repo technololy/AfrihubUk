@@ -14,8 +14,8 @@
   --background-color: hsla(51, 33%, 96%, 1);
   --item-box: hsla(0, 0%, 100%, 1);
   --item-border: hsla(0, 0%, 92%, 1);
-  --add-cart-text: hsla(152, 51%, 47%, 1);
-  --add-cart-bg: hsla(151, 69%, 92%, 1);
+  --product-cta-text: hsla(152, 51%, 47%, 1);
+  --product-cta-bg: hsla(151, 69%, 92%, 1);
 
   --category-card-1-bg: hsla(25, 98%, 48%, 0.1);
   --category-card-2-bg: hsla(98, 49%, 21%, 0.1);
@@ -2001,8 +2001,8 @@ label, label + * {
 .item-box .product-box-add-to-cart-button {
   width: 60%;
   text-align: center;
-  background-color: var(--add-cart-bg);
-  color: var(--add-cart-text);
+  background-color: var(--primary-color);
+  color: var(--white-color);
   font-size: var(--sm-size);
   font-family: var(--primary-font);
   font-weight: 500;
@@ -2010,7 +2010,7 @@ label, label + * {
 
   /* cart icon */
   padding-left: var(--base-size);
-  background-image: url('../images/add-to-card.svg');
+  background-image: url('../images/add-to-cart.svg');
   background-repeat: no-repeat;
   background-position: calc(50% - 2.75rem) center;
   background-size: var(--base-size) var(--base-size);
@@ -2035,25 +2035,25 @@ label, label + * {
 .item-box .add-to-wishlist-button {
   width: 20%;
   border-left: 1px solid #fff !important;
-  background-color: #eaeaea;
+  background-color: var(--product-cta-bg);
   background-position: center;
   background-repeat: no-repeat;
   font-size: 0;
 }
 
 .item-box .add-to-compare-list-button {
-  background-image: url('../images/compare-button.png');
+  background-image: url('../images/compare-button.svg');
 }
 
 .item-box .add-to-wishlist-button {
-  background-image: url('../images/wishlist-button.png');
+  background-image: url('../images/wishlist-button.svg');
 }
 
 .item-box .add-to-compare-list-button:hover,
 .item-box .add-to-compare-list-button:focus,
 .item-box .add-to-wishlist-button:hover,
 .item-box .add-to-wishlist-button:focus {
-  background-color: #ddd;
+  opacity: 0.85;
 }
 
 .home-page-category-grid,
@@ -2479,7 +2479,7 @@ label, label + * {
 }
 
 .overview .add-to-compare-list-button {
-  background-image: url('../images/compare-button.png');
+  background-image: url('../images/compare-button.svg');
 }
 
 .overview .email-a-friend-button {
@@ -2498,7 +2498,7 @@ label, label + * {
 
 .overview .add-to-wishlist-button,
 .variant-overview .add-to-wishlist-button {
-  background-image: url('../images/wishlist-button.png');
+  background-image: url('../images/wishlist-button.svg');
 }
 
 .overview .manufacturers {
