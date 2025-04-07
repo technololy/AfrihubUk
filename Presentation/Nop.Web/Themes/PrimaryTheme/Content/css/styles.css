@@ -23,6 +23,7 @@
   --category-card-4-bg: hsla(15, 80%, 54%, 0.1);
 
   --cart-count-bg: hsla(0, 97%, 42%, 1);
+  --primary-bg-light: hsla(152, 47%, 85%, 0.78);
 }
 
 * {
@@ -2134,14 +2135,50 @@ label, label + * {
 .product-grid .title {
   margin: 0 0 2rem;
   text-align: left;
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 1.625rem;
   color: var(--black-color);
   text-transform: capitalize;
 }
 
 .product-grid .title strong {
-  font-weight: normal;
+  font-weight: 600;
+}
+
+.product-grid.bestsellers .title {
+  margin-bottom: 2.5rem;
+}
+
+.bestsellers {
+  position: relative;
+  z-index: 1;
+  padding: 4rem 0 1rem;
+}
+
+.bestsellers::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 100%;
+  background-image: url('../images/bestsellers-bg.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+.bestsellers::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 100%;
+  background-color: var(--primary-bg-light);
+  z-index: -1;
 }
 
 .manufacturer-grid .title {
