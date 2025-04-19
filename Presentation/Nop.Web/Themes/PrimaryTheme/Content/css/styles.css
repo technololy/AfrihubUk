@@ -6,23 +6,23 @@
   --xs-size: 0.75rem;
   --sm-size: 0.875rem;
   --base-size: 1rem;
-  --nuetral-color: hsla(60, 1%, 48%, 1);
-  --black-color: hsla(0, 0%, 0%, 1);
-  --white-color: hsla(100, 100%, 100%, 1);
-  --primary-color: hsla(174, 90%, 16%, 1);
-  --secondary-color: hsla(43, 100%, 63%, 1);
-  --background-color: hsla(51, 33%, 96%, 1);
-  --item-box: hsla(0, 0%, 100%, 1);
-  --item-border: hsla(0, 0%, 92%, 1);
-  --product-cta-text: hsla(152, 51%, 47%, 1);
-  --product-cta-bg: hsla(151, 69%, 92%, 1);
+  --nuetral-color: hsl(60, 1%, 48%);
+  --black-color: hsl(0, 0%, 0%);
+  --white-color: hsl(100, 100%, 100%);
+  --primary-color: hsl(174, 90%, 16%);
+  --secondary-color: hsl(43, 100%, 63%);
+  --background-color: hsl(51, 33%, 96%);
+  --item-box: hsl(0, 0%, 100%);
+  --item-border: hsl(0, 0%, 92%);
+  --product-cta-text: hsl(152, 51%, 47%);
+  --product-cta-bg: hsl(150, 70%, 92%);
 
   --category-card-1-bg: hsla(25, 98%, 48%, 0.1);
   --category-card-2-bg: hsla(98, 49%, 21%, 0.1);
   --category-card-3-bg: hsla(355, 90%, 45%, 0.1);
   --category-card-4-bg: hsla(15, 80%, 54%, 0.1);
 
-  --cart-count-bg: hsla(0, 97%, 42%, 1);
+  --cart-count-bg: hsl(0, 97%, 42%);
   --primary-bg-light: hsla(152, 47%, 85%, 0.78);
 
   --join-waitlist-title-color: hsl(43, 58%, 32%);
