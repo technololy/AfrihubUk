@@ -1098,6 +1098,67 @@ label, label + * {
   opacity: 1;
 }
 
+.header-lower {
+  margin: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 1rem 0;
+}
+
+.header-lower button.back-button {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  max-width: 8.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0 0.5rem;
+  padding: 10px 20px;
+  border: none;
+}
+
+.header-lower .shopping-info {
+  color: var(--nuetral-color);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem 0;
+  padding-left: 0.25rem;
+  border-left: 2px solid var(--primary-color);
+}
+
+.header-lower .shopping-info {
+  font-size: var(--xs-size);
+}
+
+.header-lower .shopping-info span {
+  color: var(--black-color);
+  font-size: var(--sm-size);
+  font-weight: 500;
+}
+
+.header-lower .contact-phone {
+  align-items: center;
+  gap: 0 0.25rem;
+}
+
+.header-lower .contact-phone.mobile {
+  display: flex;
+}
+
+.header-lower .contact-phone.notmobile {
+  display: none;
+}
+
+.header-lower .contact-phone a.contact-phone-link {
+  color: var(--primary-color);
+  font-size: var(--sm-size);
+  font-weight: 500;
+}
+
+.header-lower .contact-phone a.contact-phone-link:hover, a.contact-phone-link:focus {
+  opacity: 0.8;
+}
+
 .header-search-box-wrapper {
   display: flex;
   flex-direction: column-reverse;
@@ -7084,7 +7145,7 @@ label, label + * {
     z-index: 1;
     width: 90%;
     max-width: 600px;
-    margin: 0 auto 40px;
+    margin: 0 auto 2rem;
   }
 
   .menu-toggle {
@@ -7431,6 +7492,28 @@ label, label + * {
 
   .header-selectors-wrapper > div {
     width: 20%;
+  }
+
+  .header-lower {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-lower .shopping-info,
+  .header-lower .shopping-info span,
+  .header-lower .contact-phone-link {
+    font-size: var(--base-size);
+  }
+  
+
+  .header-lower .contact-phone.mobile {
+    display: none;
+  }
+
+  .header-lower .contact-phone.notmobile {
+    display: flex;
   }
 
 
@@ -8378,6 +8461,13 @@ label, label + * {
     vertical-align: middle;
     font-size: 0;
     margin: 0;
+  }
+
+  .header-lower .shopping-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0 1.25rem;
   }
 
   .header-search-box-wrapper {
