@@ -35,6 +35,13 @@
         @await Component.InvokeAsync(typeof(HomepageProductsViewComponent))
         @await Component.InvokeAsync(typeof(WidgetViewComponent), new { widgetZone = PublicWidgetZones.HomepageBeforeBestSellers })
         @await Component.InvokeAsync(typeof(HomepageBestSellersViewComponent))
+        <div class="join-waitlist">
+            <div class="join-waitlist-content">
+                <h3 class="title">Join the waitlist for Our App</h3>
+                <p class="description">Exciting things are coming your way! 🚀 Be the first to experience the ultimate shopping convenience with our upcoming app. Whether you prefer an in-store shopping experience or hassle-free home delivery, our app puts the power of choice in your hands.</p>
+                @await Component.InvokeAsync(typeof(NewsletterBoxViewComponent))
+            </div>
+        </div>
         @await Component.InvokeAsync(typeof(WidgetViewComponent), new { widgetZone = PublicWidgetZones.HomepageBeforeNews })
         @await Component.InvokeAsync(typeof(HomepageNewsViewComponent))
         @await Component.InvokeAsync(typeof(WidgetViewComponent), new { widgetZone = PublicWidgetZones.HomepageBeforePoll })

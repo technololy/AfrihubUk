@@ -24,6 +24,8 @@
 
   --cart-count-bg: hsla(0, 97%, 42%, 1);
   --primary-bg-light: hsla(152, 47%, 85%, 0.78);
+
+  --join-waitlist-title-color: hsl(43, 58%, 32%);
 }
 
 * {
@@ -2180,6 +2182,55 @@ label, label + * {
   height: 100%;
   background-color: var(--primary-bg-light);
   z-index: -1;
+}
+
+.join-waitlist {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.join-waitlist-content {
+  width: max-content;
+  margin: auto;
+  padding: 1.25rem 0.625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  border-radius: 0.625rem;
+}
+
+.join-waitlist .title {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--join-waitlist-title-color);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.join-waitlist .description {
+  text-align: center;
+  color: var(--black-color);
+  font-size: var(--sm-size);
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.join-waitlist .newsletter {
+  margin: 2rem auto 0;
+}
+
+.join-waitlist .newsletter .newsletter-subscribe {
+  width: 100%;
+}
+
+.join-waitlist .newsletter .title {
+  display: none;
 }
 
 .manufacturer-grid .title {
@@ -8024,6 +8075,36 @@ label, label + * {
     clear: both;
     text-align: left;
   }
+
+  .join-waitlist {
+    min-height: 25.25rem;
+    background-image: url(../images/join-waitlist-bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .join-waitlist-content {
+    width: max-content;
+    padding: 1.25rem;
+    background-color: transparent;
+  }
+
+  .join-waitlist .title {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    max-width: 44rem;
+  }
+  
+  .join-waitlist .description {
+    font-size: var(--base-size);
+    line-height: 25px;
+    max-width: 48rem;
+  }
+
+  .join-waitlist .newsletter {
+    width: 24rem;
+  }
 }
 
 
@@ -8971,6 +9052,24 @@ label, label + * {
     width: 400px;
     margin: 10px 0;
     vertical-align: middle;
+  }
+
+  .join-waitlist {
+    min-height: 30.25rem;
+  }
+
+  .join-waitlist .title {
+    margin-bottom: 1.25rem;
+    font-size: 1.875rem;
+  }
+  
+  .join-waitlist .description {
+    line-height: 29px;
+  }
+  
+  .join-waitlist .newsletter {
+    margin: 2.5rem auto 0;
+    width: 28rem;
   }
 }
 
