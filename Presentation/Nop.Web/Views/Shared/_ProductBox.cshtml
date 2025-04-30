@@ -65,7 +65,7 @@
             @* @Model.Name *@
             @* </a> *@
         @* </span> *@
-        <h2 class="product-title">
+        <h2 class="product-title" data-full-text="@Model.Name">
             <a href="@(Url.RouteUrl<Product>(new {SeName = Model.SeName }))">@Model.Name</a>
         </h2>
         @if (catalogSettings.ShowSkuOnCatalogPages && !string.IsNullOrEmpty(Model.Sku))
