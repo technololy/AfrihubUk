@@ -909,6 +909,36 @@ label, label + * {
 }
 
 
+/*** HOME WIDGET ***/
+
+
+.home-widget-subscribe {
+  position: absolute;
+  left: calc((100% - 90%) / 2);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+}
+
+.home-widget-subscribe h2 {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.home-widget-subscribe p {
+  color: var(--nuetral-color);
+  font-weight: 500;
+}
+
+.home-widget-subscribe .newsletter .title {
+  display: none;
+}
+
+.home-widget-subscribe .newsletter-subscribe {
+  max-width: 26.5rem;
+}
+
+
 /*********** HEADER ***********/
 
 
@@ -1102,7 +1132,6 @@ label, label + * {
   margin: 1.5rem 0;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   gap: 1rem 0;
 }
 
@@ -1163,10 +1192,10 @@ label, label + * {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  gap: 1rem 0;
+  gap: 0.5rem 0;
   width: 100%;
   max-width: 980px;
-  margin: 0 auto;
+  margin: 1.5rem auto 1rem;
 }
 
 /* Search box */
@@ -6997,6 +7026,23 @@ label, label + * {
 }
 
 
+@media all and (max-width: 480px) {
+  /*** HOME WIDGET ***/
+
+
+  .home-widget-subscribe h2 {
+    font-size: 1.25rem;
+  }
+  
+  .home-widget-subscribe p {
+    margin: 0.25rem 0 0.75rem;
+    font-size: 0.5rem;
+  }
+}
+
+
+
+
 
 @media all and (max-width: 769px) {
 
@@ -7288,6 +7334,23 @@ label, label + * {
   }
 
 
+  /*** HOME WIDGET ***/
+
+
+  .home-widget-subscribe {
+    left: calc((100% - 92.5%) / 2);
+  }
+
+  .home-widget-subscribe h2 {
+    font-size: 1.75rem;
+  }
+  
+  .home-widget-subscribe p {
+    margin: 0.5rem 0 1rem;
+    font-size: 0.75rem;
+  }
+  
+
   /*** HEADER ***/
 
 
@@ -7484,6 +7547,27 @@ label, label + * {
 
   .order-details-page .data-table tr:nth-child(3n+1) {
     clear: both;
+  }
+
+
+  /*** HOME WIDGET ***/
+
+
+  .home-widget-subscribe {
+    left: calc((100% - 94%) / 2);
+  }
+
+  .home-widget-subscribe h2 {
+    font-size: 2.5rem;
+  }
+
+  .home-widget-subscribe p {
+    margin: 1rem 0 2rem;
+    font-size: 1rem;
+  }
+
+  .home-widget-subscribe .newsletter-subscribe .newsletter-email {
+    padding: 8px;
   }
 
 
@@ -8286,6 +8370,29 @@ label, label + * {
     display: none;
   }
 
+  .home-widget-subscribe h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: hsla(174, 90%, 16%, 1);
+  }
+
+
+  /*** HOME WIDGET ***/
+
+
+  .home-widget-subscribe {
+    left: calc((100% - 980px) / 2);
+  }
+
+  .home-widget-subscribe h2 {
+    font-size: 3rem;
+  }
+
+  .home-widget-subscribe p {
+    margin: 1.5rem 0 3.5rem;
+    font-size: 1.2rem;
+  }
+
 
   /*** HEADER ***/
 
@@ -8474,7 +8581,7 @@ label, label + * {
     flex-direction: row;
     justify-content: space-between;
     gap: 0 0.5rem;
-    margin: 1rem auto;
+    margin: 2rem auto 1.5rem;
   }
 
   .search-box input.search-box-text,
@@ -9189,6 +9296,13 @@ label, label + * {
     width: auto;
   }
 
+  /*** HOME WIDGET ***/
+
+
+  .home-widget-subscribe {
+    left: calc((100% - 1200px) / 2);
+  }
+
 
   /*** HEADER ***/
 
@@ -9199,6 +9313,7 @@ label, label + * {
 
   .header-search-box-wrapper {
     max-width: 1200px;
+    margin: 2.5rem auto 2rem;
   }
   
 
@@ -9365,8 +9480,8 @@ label, label + * {
 }
 
 .swiper-pagination-bullet-active {
-  padding: 5px;
-  background-color: var(--primary-color);
+  padding: 0.25rem;
+  background-color: var(--primary-color) !important;
 }
 
 a.skip {
