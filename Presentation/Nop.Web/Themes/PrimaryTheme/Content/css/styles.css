@@ -1129,7 +1129,7 @@ label, label + * {
 }
 
 .header-lower {
-  margin: 1.5rem 0;
+  margin: 2rem 0 1rem;
   display: flex;
   flex-direction: column;
   gap: 1rem 0;
@@ -2047,17 +2047,17 @@ label, label + * {
 
 .item-box .product-rating-box {
   display: inline-block;
-  margin: 0 0 10px;
+  margin: 0.3125rem 0;
 }
 
 .item-box .rating {
-  background: url('../images/rating1.png') repeat-x;
+  background: url('../images/rating1.svg') repeat-x;
   width: 5rem;
   height: 1rem;
 }
 
 .item-box .rating div {
-  background: url('../images/rating2.png') repeat-x;
+  background: url('../images/rating2.svg') repeat-x;
   height: 1rem;
 }
 
@@ -2252,7 +2252,7 @@ label, label + * {
 
 .product-grid,
 .product-list {
-  margin: 0 0 3.5rem;
+  margin: 3.5rem 0;
 }
 
 .product-grid .title {
@@ -2274,7 +2274,7 @@ label, label + * {
 .bestsellers {
   position: relative;
   z-index: 1;
-  padding: 4rem 0 1rem;
+  padding: 4rem 0 2rem;
 }
 
 .bestsellers::before {
@@ -2579,7 +2579,7 @@ label, label + * {
 .product-review-box .rating {
   width: 5rem;
   height: 1rem;
-  background: url('../images/rating1.png') repeat-x;
+  background: url('../images/rating1.svg') repeat-x;
 }
 
 .review-item-info {
@@ -2612,7 +2612,7 @@ label, label + * {
 
 .product-review-box .rating div {
   height: 1rem;
-  background: url('../images/rating2.png') repeat-x;
+  background: url('../images/rating2.svg') repeat-x;
   font-size: 0px;
   line-height: 0px;
 }
@@ -7428,10 +7428,6 @@ label, label + * {
     clear: both;
   }
 
-  .item-box .product-rating-box {
-    margin: 0 0 0.5rem;
-  }
-
   .item-box .prices {
     /* min-height: 40px; */
   }
@@ -7714,7 +7710,7 @@ label, label + * {
     clear: none;
   }
 
-  .item-box:nth-child(3n+1) {
+  .item-box:nth-child(4n+1) {
     clear: both;
   }
 
@@ -8885,7 +8881,7 @@ label, label + * {
   .product-details-page .product-grid .item-box,
   .shopping-cart-page .product-grid .item-box {
     width: 24%;
-    margin: 0 0.5% 3rem;
+    margin: 0 0.5% 2rem;
   }
 
   .home-page .product-grid .item-box:nth-child(3n+1),
@@ -9473,6 +9469,25 @@ label, label + * {
   .topic-post .post-text {
     width: 930px;
     max-width: 100%;
+  }
+
+
+  /*** CATEGORY ***/
+
+  .home-page .product-grid .item-box {
+    width: 19%;
+  }
+
+  .home-page .product-grid .item-box:nth-child(5n+1) {
+    clear: both;
+  }
+
+  .home-page .product-grid .item-box:nth-child(4n+1) {
+    clear: none;
+  }
+
+  .home-page-category-grid .item-box {
+    width: 24%;
   }
 
   /*** ITEM BOX ***/
