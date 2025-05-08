@@ -13,8 +13,23 @@
         };
         AjaxCart.init(false, '.header-links .cart-qty', '.header-links .wishlist-qty', '#flyout-cart', localized_data);
     </script>
-    <div class="header-menu">
-        @await Component.InvokeAsync(typeof(TopMenuViewComponent))
+    <div style="position: relative;">
+        @await Component.InvokeAsync(typeof(WidgetViewComponent), new { widgetZone = PublicWidgetZones.HomepageTop })
+        <div class="home-widget-content-wrapper">
+            <div class="home-widget-subscribe">
+                <h2>Josh Supermarket <br /> Got You.</h2>
+                <p>Save up to 60% off on your first order</p>
+                @await Component.InvokeAsync(typeof(NewsletterBoxViewComponent))
+            </div>
+        </div>
+    </div>
+    <div class="header-search-box-wrapper">
+        <div class="header-menu">
+            @await Component.InvokeAsync(typeof(TopMenuViewComponent))
+        </div>
+        <div class="search-box store-search-box">
+            @await Component.InvokeAsync(typeof(SearchBoxViewComponent))
+        </div>
     </div>
     <div class="master-wrapper-content" id="main" role="main">
         @await Component.InvokeAsync(typeof(WidgetViewComponent), new { widgetZone = PublicWidgetZones.ContentBefore })

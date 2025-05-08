@@ -7,8 +7,8 @@
         @await Component.InvokeAsync(typeof(WidgetViewComponent), new { widgetZone = PublicWidgetZones.HeaderLinksBefore, additionalData = Model })
         @if (Model.IsAuthenticated)
         {
-            <li><a href="@Url.RouteUrl("CustomerInfo")" class="ico-account">@T("Account.MyAccount")@*@Model.CustomerName*@</a></li>
             <li><a href="@Url.RouteUrl("Logout")" class="ico-logout">@T("Account.Logout")</a></li>
+            <li><a href="@Url.RouteUrl("CustomerInfo")" class="ico-account">@T("Account.MyAccount")@*@Model.CustomerName*@</a></li>
         }
         else
         {
@@ -43,8 +43,7 @@
         @if (Model.ShoppingCartEnabled)
         {
             <li id="topcartlink">
-                <a href="@Url.RouteUrl("ShoppingCart")" class="ico-cart">
-                    <span class="cart-label">@T("ShoppingCart")</span>
+                <a href="@Url.RouteUrl("ShoppingCart")" class="ico-cart" aria-label="@T("ShoppingCart")">
                     <span class="cart-qty">@T("ShoppingCart.HeaderQuantity", Model.ShoppingCartItems)</span>
                 </a>
             </li>

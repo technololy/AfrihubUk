@@ -22,7 +22,11 @@
             </script>
         }
         @await Component.InvokeAsync(typeof(WidgetViewComponent), new { widgetZone = PublicWidgetZones.SearchBoxBeforeSearchButton, additionalData = Model })
-        <button type="submit" class="button-1 search-box-button">@T("Search.Button")</button>
+        <button
+            type="submit"
+            class="button-1 search-box-button"
+            aria-label="@T("Search.Button")"
+        ></button>
 
         <script asp-location="Footer">
             $("#small-search-box-form").on("submit", function (event) {

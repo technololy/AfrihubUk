@@ -60,7 +60,12 @@
         }
     </div>
     <div class="details">
-        <h2 class="product-title">
+        @* <span class="product-category"> *@
+            @* <a href="@(Url.RouteUrl<Product>(new {SeName = Model.SeName }))"> *@
+            @* @Model.Name *@
+            @* </a> *@
+        @* </span> *@
+        <h2 class="product-title" data-full-text="@Model.Name">
             <a href="@(Url.RouteUrl<Product>(new {SeName = Model.SeName }))">@Model.Name</a>
         </h2>
         @if (catalogSettings.ShowSkuOnCatalogPages && !string.IsNullOrEmpty(Model.Sku))
@@ -89,11 +94,11 @@
         <div class="add-info">
             @await Component.InvokeAsync(typeof(WidgetViewComponent), new { widgetZone = PublicWidgetZones.ProductBoxAddinfoBefore, additionalData = Model })
             <div class="prices">
+                <span class="price actual-price">@Model.ProductPrice.Price</span>
                 @if (!string.IsNullOrEmpty(Model.ProductPrice.OldPrice))
                 {
                     <span class="price old-price">@Model.ProductPrice.OldPrice</span>
                 }
-                <span class="price actual-price">@Model.ProductPrice.Price</span>
                 @if (Model.ProductPrice.DisplayTaxShippingInfo)
                 {
                     var inclTax = await workContext.GetTaxDisplayTypeAsync() == TaxDisplayType.IncludingTax;
@@ -112,6 +117,14 @@
             </div>
             @await Component.InvokeAsync(typeof(WidgetViewComponent), new { widgetZone = PublicWidgetZones.ProductBoxAddinfoMiddle, additionalData = Model })
             <div class="buttons">
+                @if (!Model.ProductPrice.DisableAddToCompareListButton)
+                {
+                    <button type="button" class="button-2 add-to-compare-list-button" title="@T("ShoppingCart.AddToCompareList")" onclick="AjaxCart.addproducttocomparelist('@addtocomparelink');return false;">@T("ShoppingCart.AddToCompareList")</button>
+                }
+                @if (!Model.ProductPrice.DisableWishlistButton)
+                {
+                    <button type="button" class="button-2 add-to-wishlist-button" title="@T("ShoppingCart.AddToWishlist")" onclick="AjaxCart.addproducttocart_catalog('@addtowishlistlink');return false;">@T("ShoppingCart.AddToWishlist")</button>
+                }
                 @if (!Model.ProductPrice.DisableBuyButton)
                 {
                     var addToCartText = T("ShoppingCart.AddToCart").Text;
@@ -124,14 +137,6 @@
                         addToCartText = T("ShoppingCart.PreOrder").Text;
                     }
                     <button type="button" class="button-2 product-box-add-to-cart-button" onclick="AjaxCart.addproducttocart_catalog('@addtocartlink');return false;">@(addToCartText)</button>
-                }
-                @if (!Model.ProductPrice.DisableAddToCompareListButton)
-                {
-                    <button type="button" class="button-2 add-to-compare-list-button" title="@T("ShoppingCart.AddToCompareList")" onclick="AjaxCart.addproducttocomparelist('@addtocomparelink');return false;">@T("ShoppingCart.AddToCompareList")</button>
-                }
-                @if (!Model.ProductPrice.DisableWishlistButton)
-                {
-                    <button type="button" class="button-2 add-to-wishlist-button" title="@T("ShoppingCart.AddToWishlist")" onclick="AjaxCart.addproducttocart_catalog('@addtowishlistlink');return false;">@T("ShoppingCart.AddToWishlist")</button>
                 }
             </div>
             @await Component.InvokeAsync(typeof(WidgetViewComponent), new { widgetZone = PublicWidgetZones.ProductBoxAddinfoAfter, additionalData = Model })
